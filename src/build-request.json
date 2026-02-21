@@ -1,0 +1,62 @@
+{
+  "kind": "build_request",
+  "title": "Replace location dropdown with embedded map showing exact Indore address",
+  "projectName": "Urban Rasoi Dhaba",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "text": "Remove the north/south location filter dropdown from the Contact page and replace it with a single embedded interactive map component that displays the exact location: 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "in the location first it shoult be a single option of location not north or south but it is a option of location which have the real map",
+          "the exact location of the rasoi is 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+          "i want that in the map show this location"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Location dropdown selector is removed from the Contact page",
+        "A single embedded map is displayed showing the location at 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+        "The map is interactive and shows a marker at the exact address",
+        "Map is properly responsive and integrates with the existing Bootstrap layout"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Update the backend ContactData type and getContactData method to return a single location object with the address '622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore' instead of multiple location options",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "in the location first it shoult be a single option of location not north or south"
+        ]
+      },
+      "acceptanceCriteria": [
+        "ContactData type is updated to have a single location field instead of an array",
+        "getContactData method returns the exact address: 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+        "Existing contact data structure maintains phone, email, and hours fields"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use Bootstrap grid system for map layout integration",
+    "Maintain existing jQuery interaction patterns",
+    "Preserve the dhaba theme styling",
+    "Do not modify Internet Identity hooks or useActor.ts"
+  ],
+  "nonGoals": [
+    "Adding multiple location support",
+    "Creating location management or CRUD operations",
+    "Adding geolocation or user location detection features"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

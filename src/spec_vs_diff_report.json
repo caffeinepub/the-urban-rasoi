@@ -1,0 +1,26 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T08:20:51.055Z",
+  "summary": "The implementation successfully addresses both REQ-14 and REQ-15. The backend ContactData type has been updated to use a single location object with the exact Indore address, and the frontend Contact components have removed the location dropdown and replaced it with an embedded Google Maps component. The changes are evident across backend/main.mo, frontend Contact.tsx and Contact page files.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Migration module (backend/migration.mo) with data migration logic from old ContactData structure (northLocation/southLocation) to new single location structure",
+      "reason": "The BuildRequest has no requirement for creating a migration system or handling data migration from an old schema. The migration.mo file and the migration import in main.mo with '(with migration = Migration.run)' were not requested.",
+      "evidence": [
+        "backend/migration.mo",
+        "backend/main.mo"
+      ]
+    }
+  ],
+  "confidence": 0.95,
+  "changed_files": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "frontend-file-summaries.txt",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/pages/Contact.tsx",
+    "project_state.json"
+  ]
+}

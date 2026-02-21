@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Multi-page responsive website with different pages (Home, About, Menu, Contact, Category) featuring desi Indian dhaba aesthetic with category filtering functionality",
+  "architectural_notes": [
+    "Responsive design required for all screen sizes",
+    "Multi-page architecture with separate routes instead of single-page scroll navigation",
+    "Tech stack: React.js frontend, Node.js/Express backend",
+    "Styling: Bootstrap + CSS (no Tailwind CSS), jQuery for interactivity",
+    "Must be runnable in VS Code locally"
+  ],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-hero-section-with-the-cafe-name-the-urban-rasoi-and-a-welcoming-tagline-that-introduces-the-cafe",
+      "title": "Create a hero section with the cafe name 'THE URBAN RASOI' and a welcoming tagline that introduces the cafe",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-section-describing-the-urban-rasoi-s-story-atmosphere-and-unique-offerings",
+      "title": "Create an About section describing THE URBAN RASOI's story, atmosphere, and unique offerings",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-menu-section-showcasing-the-cafe-s-food-and-beverage-offerings-with-categories-e-g-beverages-meals-desserts-and-pricing",
+      "title": "Create a Menu section showcasing the cafe's food and beverage offerings with categories (e.g., beverages, meals, desserts) and pricing",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-section-with-the-cafe-s-location-hours-of-operation-phone-number-and-a-contact-form-for-inquiries",
+      "title": "Create a Contact section with the cafe's location, hours of operation, phone number, and a contact form for inquiries",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-fully-responsive-design-that-adapts-seamlessly-to-mobile-tablet-and-desktop-screen-sizes",
+      "title": "Implement fully responsive design that adapts seamlessly to mobile, tablet, and desktop screen sizes",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-navigation-header-with-links-to-all-major-sections-home-about-menu-contact-that-remains-accessible-on-all-pages",
+      "title": "Create a navigation header with links to all major sections (Home, About, Menu, Contact) that remains accessible on all pages",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-warm-inviting-visual-theme-with-earthy-tones-and-modern-typography-that-reflects-an-urban-cafe-aesthetic-ensuring-consistent-styling-across-all-sections",
+      "title": "Apply a warm, inviting visual theme with earthy tones and modern typography that reflects an urban cafe aesthetic, ensuring consistent styling across all sections",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-generated-images-as-static-assets-in-frontend-public-assets-generated-for-hero-background-cafe-interior-photos-and-food-beverage-imagery",
+      "title": "Render generated images as static assets in frontend/public/assets/generated for hero background, cafe interior photos, and food/beverage imagery",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-convert-the-single-page-application-into-a-multi-page-website-with-separate-routes-for-home-about-menu-contact-and-category-pages-where-users-must-click-navigation-links-to-access-different-pages-instead-of-scrolling",
+      "title": "Convert the single-page application into a multi-page website with separate routes for Home, About, Menu, Contact, and Category pages where users must click navigation links to access different pages instead of scrolling",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-category-page-with-filtering-functionality-for-different-food-establishment-types-including-cafe-dhaba-and-other-categories",
+      "title": "Create a Category page with filtering functionality for different food establishment types including cafe, dhaba, and other categories",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-warm-cafe-aesthetic-with-an-authentic-desi-indian-dhaba-visual-theme-featuring-dhaba-style-imagery-and-design-elements",
+      "title": "Replace the current warm cafe aesthetic with an authentic desi Indian dhaba visual theme featuring dhaba-style imagery and design elements",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-entire-frontend-using-bootstrap-for-styling-and-layout-instead-of-tailwind-css-and-include-jquery-for-interactivity-to-ensure-vs-code-compatibility",
+      "title": "Implement the entire frontend using Bootstrap for styling and layout instead of Tailwind CSS, and include jQuery for interactivity to ensure VS Code compatibility",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-each-page-home-about-menu-contact-category-with-distinct-layouts-that-differ-from-the-current-single-page-design",
+      "title": "Design each page (Home, About, Menu, Contact, Category) with distinct layouts that differ from the current single-page design",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-north-south-location-filter-dropdown-from-the-contact-page-and-replace-it-with-a-single-embedded-interactive-map-component-that-displays-the-exact-location-622-ushanagar-narendra-tiwari-marg-annapurna-road-indore",
+      "title": "Remove the north/south location filter dropdown from the Contact page and replace it with a single embedded interactive map component that displays the exact location: 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-2",
+      "summary": "Convert single-page website to multi-page with separate routes for Home, About, Menu, Contact, and Category pages",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add Category page with filtering options for cafe, dhaba, and other food establishment categories",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Apply desi Indian dhaba aesthetic with authentic dhaba-style photos and different layout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Build with React.js frontend and Node.js/Express backend",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Use Bootstrap and CSS (no Tailwind CSS) with jQuery for VS Code compatibility",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Replace location filter dropdown (north/south) with real embedded map showing exact location: 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Update the backend ContactData type and getContactData method to return a single location object with the address '622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore' instead of multiple location options",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "THE URBAN RASOI",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

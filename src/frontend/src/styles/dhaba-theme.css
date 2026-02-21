@@ -1,0 +1,155 @@
+/* Additional Dhaba Theme Styles */
+
+/* Rustic Texture Overlay */
+.rustic-texture {
+    position: relative;
+}
+
+.rustic-texture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
+/* Traditional Border Patterns */
+.traditional-border {
+    border: 3px solid var(--dhaba-primary);
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
+}
+
+.traditional-border::before,
+.traditional-border::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--dhaba-accent);
+}
+
+.traditional-border::before {
+    top: -3px;
+    left: -3px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.traditional-border::after {
+    bottom: -3px;
+    right: -3px;
+    border-left: none;
+    border-top: none;
+}
+
+/* Menu Item Hover Effect */
+.menu-item {
+    transition: all 0.3s ease;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid transparent;
+}
+
+.menu-item:hover {
+    background-color: var(--dhaba-cream);
+    border-left-color: var(--dhaba-primary);
+    transform: translateX(5px);
+}
+
+/* Category Filter Buttons */
+.category-filter-btn {
+    background-color: white;
+    border: 2px solid var(--dhaba-border);
+    color: var(--dhaba-text-dark);
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.category-filter-btn:hover,
+.category-filter-btn.active {
+    background-color: var(--dhaba-primary);
+    border-color: var(--dhaba-primary);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Image Overlay Effects */
+.image-overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.image-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(62, 39, 35, 0.7) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover::after {
+    opacity: 1;
+}
+
+/* Decorative Corner Elements */
+.corner-decoration {
+    position: relative;
+}
+
+.corner-decoration::before,
+.corner-decoration::after {
+    content: '❋';
+    position: absolute;
+    color: var(--dhaba-accent);
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+.corner-decoration::before {
+    top: 10px;
+    left: 10px;
+}
+
+.corner-decoration::after {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Price Tag Style */
+.price-tag {
+    background: linear-gradient(135deg, var(--dhaba-primary), var(--dhaba-secondary));
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(216, 67, 21, 0.3);
+}
+
+/* Loading Spinner */
+.dhaba-spinner {
+    border: 4px solid var(--dhaba-cream);
+    border-top: 4px solid var(--dhaba-primary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

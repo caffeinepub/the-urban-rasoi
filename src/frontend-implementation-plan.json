@@ -1,0 +1,34 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Replace location dropdown with embedded map showing exact Indore address",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Remove location dropdown selector and replace with single embedded interactive map showing exact address at 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+      "acceptanceCriteria": [
+        "Location dropdown selector is removed from the Contact page",
+        "A single embedded map is displayed showing the location at 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+        "The map is interactive and shows a marker at the exact address",
+        "Map is properly responsive and integrates with the existing Bootstrap layout"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "modify",
+          "description": "Remove the location dropdown selector that toggles between north/south locations. Replace it with a single embedded interactive map component that displays a marker at the exact address: 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore. Use the contactData.location object from the backend (which now contains latitude, longitude, and address fields per the backend interface) to center the map and place the marker. Integrate the map using an iframe-based solution (such as Google Maps Embed API or OpenStreetMap) that works with the existing Bootstrap grid layout. Ensure the map is responsive and maintains the dhaba theme styling."
+        },
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "modify",
+          "description": "Update the Contact page to remove any location selection logic and ensure it displays the single location with the embedded map from the Contact component. Remove any state management related to north/south location toggling. Verify the page layout remains consistent with Bootstrap grid system and preserves jQuery interaction patterns."
+        },
+        {
+          "path": "frontend/src/hooks/useContactData.ts",
+          "operation": "modify",
+          "description": "Update the hook to handle the new ContactData structure where location is a single Location object (containing latitude, longitude, and address) instead of an array. Ensure proper TypeScript typing based on the backend interface definition."
+        }
+      ]
+    }
+  ]
+}

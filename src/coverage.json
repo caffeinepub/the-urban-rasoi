@@ -1,0 +1,54 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T08:20:51.057Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-14",
+        "summary": "Remove the north/south location filter dropdown from the Contact page and replace it with a single embedded interactive map component that displays the exact location: 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/pages/Contact.tsx",
+          "frontend/src/hooks/useContactData.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Contact.tsx",
+          "frontend/src/pages/Contact.tsx"
+        ]
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Update the backend ContactData type and getContactData method to return a single location object with the address '622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore' instead of multiple location options",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/pages/Contact.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

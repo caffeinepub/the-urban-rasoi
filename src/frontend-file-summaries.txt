@@ -1,0 +1,22 @@
+{
+  "frontend/src/App.tsx": "Main application component with React Router setup for multi-page navigation, including routes for Home, About, Menu, Contact, and Category pages with shared Layout component.",
+  "frontend/src/components/Navigation.tsx": "Bootstrap navbar component with responsive mobile menu, active route highlighting, and scroll-based styling changes using React Router Link components.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with background image overlay, cafe name, tagline, description, and call-to-action buttons.",
+  "frontend/src/components/About.tsx": "About section featuring cafe story, interior image, and three key features with icons displayed in a responsive grid layout.",
+  "frontend/src/components/Menu.tsx": "Comprehensive menu section displaying three categories (Beverages, Meals, Desserts) with images, item names, descriptions, and prices in an alternating layout.",
+  "frontend/src/components/Contact.tsx": "Contact section component with Tailwind/shadcn styling displaying single location with embedded interactive map, contact information cards, and message submission form using React Query hooks.",
+  "frontend/src/components/Footer.tsx": "Footer component using Bootstrap utilities with copyright notice and caffeine.ai attribution link with UTM tracking.",
+  "frontend/src/hooks/useContactData.ts": "React Query hook to fetch contact information from the backend getContactData() method.",
+  "frontend/src/hooks/useSubmitInquiry.ts": "React Query mutation hook to submit inquiry form data to the backend submitInquiry() method with success/error handling.",
+  "frontend/src/index.css": "Custom CSS with desi dhaba theme using earthy colors (terracotta, orange, cream), traditional patterns, custom button styles, and decorative elements inspired by Indian dhaba aesthetics.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom font families (Inter, Playfair Display), warm color palette, custom shadows, and responsive design utilities.",
+  "frontend/src/main.tsx": "Application entry point with QueryClientProvider, InternetIdentityProvider, and Toaster component for notifications.",
+  "frontend/index.html": "HTML entry point with Bootstrap CSS/JS and jQuery CDN links, updated title to \"Urban Rasoi Dhaba\", and removed Tailwind references.",
+  "frontend/src/styles/dhaba-theme.css": "Additional dhaba-specific styling including rustic textures, traditional border patterns, menu item hover effects, category filter buttons, and decorative elements.",
+  "frontend/src/pages/Home.tsx": "Home page with hero section featuring dhaba exterior image, welcome section with chai image, and features section showcasing dhaba values using Bootstrap grid and cards.",
+  "frontend/src/pages/About.tsx": "About page with dhaba story, mission statement, and values sections featuring kitchen and seating images in alternating two-column Bootstrap layouts.",
+  "frontend/src/pages/Menu.tsx": "Menu page displaying four categories (Breakfast, Thali, Curries, Beverages) with images and items in alternating layouts using Bootstrap grid system.",
+  "frontend/src/pages/Contact.tsx": "Contact page with Bootstrap layout displaying single location information, embedded Google Maps iframe showing exact Indore address, contact details, and inquiry form integrated with backend hooks.",
+  "frontend/src/pages/Category.tsx": "Category page with filter buttons for different establishment types (dhaba, cafe, restaurant, street-food) and grid display of filtered establishments with jQuery fade animations.",
+  "frontend/src/utils/jquery-interactions.ts": "Utility file containing jQuery-based functions for smooth scrolling, fade-in animations, navbar scroll effects, counter animations, and filter toggle animations with explicit `this` type annotations to resolve TypeScript errors."
+}

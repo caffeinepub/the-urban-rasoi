@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-the-north-south-location-filter-dropdown-from-the-contact-page-and-replace-it-with-a-single-embedded-interactive-map-component-that-displays-the-exact-location-622-ushanagar-narendra-tiwari-marg-annapurna-road-indore",
+      "featureTitle": "Remove the north/south location filter dropdown from the Contact page and replace it with a single embedded interactive map component that displays the exact location: 622, Ushanagar, Narendra Tiwari Marg, Annapurna Road, Indore",
+      "files": [
+        "frontend/src/components/Contact.tsx",
+        "frontend/src/pages/Contact.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
